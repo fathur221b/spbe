@@ -1,0 +1,3 @@
+db  : devpelalawan_spbe_db
+user: devpelalawan_fathur
+pwd : H#rwN.&8zTSc

@@ -1,0 +1,69 @@
+GET http://localhost:5000/opd
+
+###
+
+POST http://localhost:5000/opd
+Content-Type: application/json
+
+{
+    "nama": "Dinas Kominfo"
+}
+
+###
+
+GET http://localhost:5000/opd/5
+
+###
+
+
+PATCH  http://localhost:5000/opd/5
+Content-Type: application/json
+
+{
+    "nama": "Dinas Capil"
+}
+
+###
+
+DELETE  http://localhost:5000/opd/1
+
+###
+
+GET http://localhost:5000/pelayanan
+
+###
+
+POST http://localhost:5000/pelayanan
+Content-Type: application/json
+
+{
+    "id_opd": "2",
+    "produkLayanan": "Naik Pangkat",
+    "standarLayanan": "Berbasis Aplikasi",
+    "jenisAplikasi": "Tidak Terintergrasi",
+    "keterangan": "BKPSDM"
+}
+
+###
+
+PATCH  http://localhost:5000/pelayanan/1
+Content-Type: application/json
+
+{
+    "id_opd": "2",
+    "produkLayanan": "Kenaikan Gaji Berkala",
+    "standarLayanan": "Prosedural",
+    "jenisAplikasi": "Tidak Terintergrasi",
+    "keterangan": "BKPSDM"
+}
+
+###
+
+GET  http://localhost:5000/pelayanan/opd/3
+
+###
+
+GET http://localhost:5000/pelayanan/1
+
+###
+
